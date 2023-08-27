@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Lounge Menu</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #222;
+            color: #EDEDED;
+            text-align: center;
+            padding: 2em 10%;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 2em;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 1.5em;
+            text-decoration: underline;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 0.5em 0;
+            cursor: pointer; /* indicate the item is clickable */
+        }
+
+        li strong {
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 0.25em;
+        }
+
+        li span {
+            font-size: 0.9em;
+            color: #B3B3B3;
+            display: none; /* initially hide the ingredients */
+        }
+    </style>
+    <script>
+        function toggleIngredients(element) {
+            let ingredients = element.querySelector('span');
+            if (!ingredients.style.display || ingredients.style.display === 'none') {
+                ingredients.style.display = 'block';
+            } else {
+                ingredients.style.display = 'none';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Cocktail Lounge Menu</h1>
+
+    <section>
+        <h2>Whiskey</h2>
+        <ul>
+            <li onclick="toggleIngredients(this)"><strong>Old Fashioned</strong><br><span>Bourbon or Rye whiskey, Angostura bitters, sugar cube, orange twist</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Whiskey Sour</strong><br><span>Bourbon, lemon juice, simple syrup, lemon twist</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Paper Plane</strong><br><span>Bourbon, Amaro Nonino, Aperol, lemon juice</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Whiskey Highball</strong><br><span>Whiskey, club soda, lemon twist</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Manhattan</strong><br><span>Rye whiskey, sweet vermouth, Angostura bitters, cherry</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Mint Julep</strong><br><span>Mint leaves, Bourbon, simple syrup</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Bourbon Sidecar</strong><br><span>Bourbon, triple sec, lemon juice</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Kentucky Sunrise</strong><br><span>Bourbon, orange juice, grenadine</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Kentucky Mule</strong><br><span>Bourbon, lime juice, ginger beer</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Vodka</h2>
+        <ul>
+            <li onclick="toggleIngredients(this)"><strong>Cosmopolitan</strong><br><span>Vodka, triple sec, cranberry juice, lime juice</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Moscow Mule</strong><br><span>Vodka, lime juice, ginger beer</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Lemon Drop Martini</strong><br><span>Vodka, lemon juice, simple syrup</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Gimlet</strong><br><span>Vodka, lime juice</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Espresso Martini</strong><br><span>Vodka, coffee liqueur, fresh espresso</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Vodka Collins</strong><br><span>Vodka, lemon juice, simple syrup, club soda</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Screwdriver</strong><br><span>Vodka, orange juice</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Do Not Disturb (Ema)</strong><br><span>Vodka, blue curaçao, lemon juice, soda</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Caipirinha</strong><br><span>Cachaça, sugar, lime</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Rum</h2>
+        <ul>
+            <li onclick="toggleIngredients(this)"><strong>Mojito</strong><br><span>Mint leaves, white rum, sugar, lime juice, club soda</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Dark n Stormy</strong><br><span>Dark rum, ginger beer, lime</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Daiquiri</strong><br><span>White rum, simple syrup, lime juice</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Gin</h2>
+        <ul>
+            <li onclick="toggleIngredients(this)"><strong>Bronx Cocktail</strong><br><span>Gin, sweet vermouth, dry vermouth, orange juice</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Gin and Tonic</strong><br><span>Gin, tonic water, lime</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Martini</strong><br><span>Gin, dry vermouth, lemon twist or olive</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Gimlet</strong><br><span>Gin, lime juice, simple syrup</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Gin Fizz</strong><br><span>Gin, lemon juice, simple syrup, club soda, egg white (optional)</span></li>
+            <li onclick="toggleIngredients(this)"><strong>White Lady</strong><br><span>Gin, triple sec, lemon juice</span></li>
+            <li onclick="toggleIngredients(this)"><strong>French 75</strong><br><span>Gin, lemon juice, simple syrup, Champagne</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Bees Knees</strong><br><span>Gin, lemon juice, honey syrup</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Negroni</strong><br><span>Gin, Campari, sweet vermouth</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Tequila</h2>
+        <ul>
+            <li onclick="toggleIngredients(this)"><strong>Tequila Sunrise</strong><br><span>Tequila, orange juice, grenadine</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Margarita</strong><br><span>Tequila, lime juice, triple sec</span></li>
+            <li onclick="toggleIngredients(this)"><strong>Mexican Firing Squad</strong><br><span>Tequila, lime juice, grenadine, Angostura bitters</span></li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
