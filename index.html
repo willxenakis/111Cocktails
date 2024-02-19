@@ -7,14 +7,36 @@
     <title>Skyline Sips by Will & Niraj</title>
     <!-- Sips from Skyline: Will & Niraj's OneEleven Mixes -->
     <style>
-        body {
+         body {
             font-family: 'Georgia', serif;
-            background-color: #222;
-            color: #EDEDED;
+            color: #FFFFFF;
             text-align: center;
             padding: 2em 10%;
+            position: relative;
+            background-image: url('images/city.jpeg');
+            background-size: cover;
+            background-position: center;
         }
 
+        h4 {
+        /* Add styles for the half box */
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0.5em 0;
+        }
+
+        body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity here */
+        pointer-events: none; /* This line allows pointer events to pass through the overlay */
+        }
         h1 {
             font-size: 3em;
             margin-bottom: 2em;
@@ -24,7 +46,7 @@
         h2 {
             font-size: 2em;
             margin-top: 1.5em;
-            text-decoration: underline;
+            /* text-decoration: underline; */
             text-shadow: 1px 1px 2px #000;
         }
 
@@ -93,6 +115,7 @@
 
     <section>
         <h2>Whiskey</h2>
+        <h4 style="font-style: italic; color: #FFFFFF;">Immerse yourself in the amber glow of whiskey, where every sip unveils a story of rich malts and grains, from smooth to robust, a timeless journey awaits.</h4>
         <ul>
             <li onclick="toggleIngredients(this)">
                 <strong>Old Fashioned</strong>
@@ -108,9 +131,9 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Whiskey Sour</strong>
+                <strong>Whiskey Sour ~</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Whiskey Sour Cocktail">
+                    <img src="images/whiskey_sour.jpeg" alt="Whiskey Sour Cocktail">
                     <ul>
                         <li>Bourbon</li>
                         <li>Lemon Juice</li>
@@ -122,7 +145,7 @@
             <li onclick="toggleIngredients(this)">
                 <strong>Paper Plane</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Paper Plane Cocktail">
+                    <img src="images/paper_plane.jpeg" alt="Paper Plane Cocktail">
                     <ul>
                         <li>Bourbon</li>
                         <li>Amaro Nonino</li>
@@ -132,7 +155,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Whiskey Highball</strong>
+                <strong>Whiskey Highball ~ </strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Whiskey Highball Cocktail">
                     <ul>
@@ -143,7 +166,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Manhattan</strong>
+                <strong>Manhattan ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Manhattan Cocktail">
                     <ul>
@@ -155,7 +178,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Mint Julep</strong>
+                <strong>Mint Julep ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Mint Julep Cocktail">
                     <ul>
@@ -166,7 +189,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Bourbon Sidecar</strong>
+                <strong>Bourbon Sidecar ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Bourbon Sidecar Cocktail">
                     <ul>
@@ -177,7 +200,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Kentucky Sunrise</strong>
+                <strong>Kentucky Sunrise ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Kentucky Sunrise Cocktail">
                     <ul>
@@ -188,7 +211,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Kentucky Mule</strong>
+                <strong>Kentucky Mule ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Kentucky Mule Cocktail">
                     <ul>
@@ -203,11 +226,13 @@
 
     <section>
         <h2>Vodka</h2>
+        <h4 style="font-style: italic; color: #FFFFFF;">Embark on a smooth sailing adventure with our vodka cocktails, each sip a testament to its versatility, from crisp and clean to daringly bold.</h4>
+
         <ul>
             <li onclick="toggleIngredients(this)">
                 <strong>Cosmopolitan</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Cosmopolitan Cocktail">
+                    <img src="images/cosmo.jpeg" alt="Cosmopolitan Cocktail">
                     <ul>
                         <li>Vodka</li>
                         <li>Triple Sec</li>
@@ -217,7 +242,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Moscow Mule</strong>
+                <strong>Moscow Mule ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Moscow Mule Cocktail">
                     <ul>
@@ -228,7 +253,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Lemon Drop Martini</strong>
+                <strong>Lemon Drop Martini ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Lemon Drop Martini Cocktail">
                     <ul>
@@ -239,19 +264,20 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Gimlet</strong>
+                <strong>Gimlet ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Gimlet Cocktail">
                     <ul>
                         <li>Vodka</li>
                         <li>Lemon Juice</li>
+                        <li>Simple Syrup</li>
                     </ul>
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
                 <strong>Espresso Martini</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Espresso Martini Cocktail">
+                    <img src="images/espresso_martini.jpeg" alt="Espresso Martini Cocktail">
                     <ul>
                         <li>Vodka</li>
                         <li>Espresso</li>
@@ -261,7 +287,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Vodka Collins</strong>
+                <strong>Vodka Collins ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Vodka Collins Cocktail">
                     <ul>
@@ -273,7 +299,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Screwdriver</strong>
+                <strong>Screwdriver ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Screwdriver Cocktail">
                     <ul>
@@ -283,29 +309,22 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Do Not Disturb (Ema) (Fix)</strong>
+                <strong>Do Not Disturb (Ema) ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Do Not Disturb (Ema) Cocktail">
                     <ul>
                         <li>Vodka</li>
-                        <li>Blue Curaç</li>
-                    </ul>
-                </div>
-            </li>
-            <li onclick="toggleIngredients(this)">
-                <strong>Caipirinha (FIX)</strong>
-                <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Caipirinha Cocktail">
-                    <ul>
-                        <li>Vodka</li>
-                        <li>Blue Curaç</li>
+                        <li>Cucumber</li>
+                        <li>Mint</li>
+                        <li>Lemon Juice</li>
+                        <li>St Germain</li>
                     </ul>
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
                 <strong>The 55 (House Special)</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Caipirinha Cocktail">
+                    <img src="images/the_55.jpeg" alt="Caipirinha Cocktail">
                     <ul>
                         <li>Vodka</li>
                         <li>St Germain</li>
@@ -315,14 +334,29 @@
                     </ul>
                 </div>
             </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>The Hideaway (Daisies)</strong>
+                <div class="cocktail-details">
+                    <img src="images/olio.jpeg" alt="Caipirinha Cocktail">
+                    <ul>
+                        <li>Vodka</li>
+                        <li>Olive Oil</li>
+                        <li>Simple Syrup</li>
+                        <li>Bay Leaf</li>
+                        <li>Egg White</li>
+                        <li>Lemon</li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </section>
 
     <section>
         <h2>Rum</h2>
+        <h4 style="font-style: italic; color: #FFFFFF;">Transport yourself to tropical bliss with our rum cocktails, where each sip is a journey to exotic shores, a paradise in every drop.</h4>
         <ul>
             <li onclick="toggleIngredients(this)">
-                <strong>Mojito</strong>
+                <strong>Mojito ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Mojito Cocktail">
                     <ul>
@@ -337,7 +371,7 @@
             <li onclick="toggleIngredients(this)">
                 <strong>Dark n Stormy</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Dark n Stormy Cocktail">
+                    <img src="images/dark_and_stormy.jpeg" alt="Dark n Stormy Cocktail">
                     <ul>
                         <li>Dark Rum</li>
                         <li>Ginger Beer</li>
@@ -346,7 +380,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Daiquiri</strong>
+                <strong>Daiquiri ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Daiquiri Cocktail">
                     <ul>
@@ -356,14 +390,26 @@
                     </ul>
                 </div>
             </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Caipirinha ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Caipirinha Cocktail">
+                    <ul>
+                        <li>Cachaca</li>
+                        <li>Sugar</li>
+                        <li>Lime</li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </section>
 
     <section>
         <h2>Gin</h2>
+        <h4 style="font-style: italic; color: #FFFFFF;">Join the juniper journey with our gin cocktails, where zesty citrus and fragrant herbs dance in every sip, a refreshing symphony for the senses.</h4>
         <ul>
             <li onclick="toggleIngredients(this)">
-                <strong>Bronx Cocktail</strong>
+                <strong>Bronx Cocktail ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Bronx Cocktail Cocktail">
                     <ul>
@@ -375,7 +421,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Gin and Tonic</strong>
+                <strong>Gin and Tonic ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Gin and Tonic Cocktail">
                     <ul>
@@ -386,7 +432,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Martini</strong>
+                <strong>Martini ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Martini Cocktail">
                     <ul>
@@ -397,7 +443,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Gimlet</strong>
+                <strong>Gimlet ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Gimlet Cocktail">
                     <ul>
@@ -410,7 +456,7 @@
             <li onclick="toggleIngredients(this)">
                 <strong>French Gimlet</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="French Gimlet Cocktail">
+                    <img src="images/french_gimlet.jpeg" alt="French Gimlet Cocktail">
                     <ul>
                         <li>Gin</li>
                         <li>Lime Juice</li>
@@ -421,29 +467,29 @@
             <li onclick="toggleIngredients(this)">
                 <strong>Gin Fizz</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Gin Fizz Cocktail">
+                    <img src="images/gin_fizz.jpeg" alt="Gin Fizz Cocktail">
                     <ul>
                         <li>Gin</li>
                         <li>Lemon Juice</li>    
                         <li>Simple Syrup</li>
                         <li>Club Soda</li>
-                        <li>Egg white (optional)</li>
+                        <li>Egg White</li>
                     </ul>
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
                 <strong>White Lady</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="White Lady Cocktail">
+                    <img src="images/white_lady.jpeg" alt="White Lady Cocktail">
                     <ul>
                         <li>Gin</li>
-                        <li>Triple Sec</li>    
+                        <li>Cointreau</li>    
                         <li>Lemon Juice</li>                 
                     </ul>
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>French 75</strong>
+                <strong>French 75 ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="French 75 Cocktail">
                     <ul>
@@ -455,7 +501,7 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Bees Knees</strong>
+                <strong>Bees Knees ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Bees Knees Cocktail">
                     <ul>
@@ -468,7 +514,7 @@
             <li onclick="toggleIngredients(this)">
                 <strong>Negroni</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Negroni Cocktail">
+                    <img src="images/negroni.jpeg" alt="Negroni Cocktail">
                     <ul>
                         <li>Gin</li>
                         <li>Campari</li>    
@@ -481,9 +527,10 @@
 
     <section>
         <h2>Tequila</h2>
+        <h4 style="font-style: italic; color: #FFFFFF;">Indulge in the fiery allure of tequila, where sun-kissed limes and spicy chilies ignite your senses, a vibrant fiesta in every glass.</h4>
         <ul>
             <li onclick="toggleIngredients(this)">
-                <strong>Tequila Sunrise</strong>
+                <strong>Tequila Sunrise ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
                     <ul>
@@ -494,25 +541,145 @@
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
-                <strong>Margarita</strong>
+                <strong>Margarita ~</strong>
                 <div class="cocktail-details">
                     <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
                     <ul>
                         <li>Tequila</li>
                         <li>Lime Juice</li>    
-                        <li>Triple Sec</li>                 
+                        <li>Cointreau</li>                 
                     </ul>
                 </div>
             </li>
             <li onclick="toggleIngredients(this)">
                 <strong>Mexican Firing Squad</strong>
                 <div class="cocktail-details">
-                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <img src="images/mexican_firing_squad.jpeg" alt="Tequila Sunrise Cocktail">
                     <ul>
                         <li>Tequila</li>
                         <li>Lime Juice</li>    
                         <li>Grenadine</li>   
                         <li>Angostura Bitters</li>              
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Specials</h2>
+        <h4 style="font-style: italic; color: #FFFFFF;">Savor the nightly delight of our Specials, where creative concoctions and tantalizing flavors blend to offer a unique and unforgettable drinking experience.</h4>
+        <ul>
+            <li onclick="toggleIngredients(this)">
+                <strong>Paloma ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Tequila</li>
+                        <li>Grapefruit Juice</li>    
+                        <li>Lime Juice</li>
+                        <li>Simple Syrup</li>
+                        <li>Club Soda</li>
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Le Palmer ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Amaro Nonino</li>
+                        <li>Le Mone</li>    
+                        <li>Soda Water</li>                 
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Blackberry Bourbon Smash ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Bourbon</li>
+                        <li>Mint</li>
+                        <li>Sugar</li>    
+                        <li>Blackberry</li>   
+                        <li>Lime Juice</li>
+                        <li>Club Soda</li>              
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Singapore Sling ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Gin</li>
+                        <li>Benedictine</li>
+                        <li>Grand Mariner</li>    
+                        <li>Heering Cherry Liqueur</li>   
+                        <li>Lime Juice</li>
+                        <li>Pinapple Juice</li>              
+                        <li>Club Soda</li>              
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Clover Club ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Gin</li>
+                        <li>Egg White</li>
+                        <li>Raspberry Syrup</li>    
+                        <li>Lemon Juice</li>             
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Aviation ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Gin</li>
+                        <li>Creme de Violette</li>
+                        <li>Maraschino Liqueur</li>    
+                        <li>Blackberry</li>   
+                        <li>Lime Juice</li>
+                        <li>Club Soda</li>              
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Vesper Martini ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Gin</li>
+                        <li>Vodka</li>
+                        <li>Lillet Blanc</li>                 
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Golden Hour ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Bourbon</li>
+                        <li>Lillet Blanc</li>
+                        <li>Aperol</li>                 
+                    </ul>
+                </div>
+            </li>
+            <li onclick="toggleIngredients(this)">
+                <strong>Caipirinha de Maracuja ~</strong>
+                <div class="cocktail-details">
+                    <img src="images/coming_soon.jpeg" alt="Tequila Sunrise Cocktail">
+                    <ul>
+                        <li>Cachaca</li>
+                        <li>Passion Fruit</li>
+                        <li>Lime</li>
+                        <li>Sugar</li>                 
                     </ul>
                 </div>
             </li>
